@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+body{
+    background-color: #0A192F;
+
+}
+#nav-logo{
+    display: flex;
+    flex-direction: row;
+    background-color: #112240 !important;
+    position: relative;
+
+    /* Ye animation website load hote hi chalega */
+    animation: slideIn 1s ease-in-out forwards;
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(100%); /* Pehle right side se bahar */
+        opacity: 0; /* Invisible */
+    }
+    to {
+        transform: translateX(0); /* Normal position pe aa jaye */
+        opacity: 1; /* Fully visible ho jaye */
+    }
+}
+.logo{
+margin: 1%;
+font-size: 2rem;
+margin-left: 8%;
+
+font-family: Century, sans-serif;
+letter-spacing: 0.5rem;
+color: #3DFFF3;
+}
+.navbar{
+    background-color: #112240 !important;
+    margin:auto;
+    font-size: 1.3rem;
+    margin-right: 3rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    /* gap: 20px; */
+}
+.navbar a{
+    color: #E0E0E0;
+    text-decoration: none;
+    padding: 2rem;
+}
+.navbar a:hover{
+    color: #64FFDA;
+}
+section{
+    background-color: #112240;
+}
+#about{
+display: flex;
+/* border: 1px solid #64ffda; */
+align-items: center;
+margin-top: 5%;
+
+/* justify-content: center; */
+/* text-align: center; */
+
+}
+.content{
+width: 40rem;
+text-align: center;
+margin-left: 3rem;
+/* gap: 20px; */
+}
+.name{
+    color:  #3DFFF3;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.developer{
+    font-size: 40px; /* Adjust size as needed */
+    font-weight: bold;
+    background: linear-gradient(90deg, #00C9FF, #FF2E63); /* Neon Blue + Purple */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Space Grotesk', sans-serif;
+margin-top: 0.8rem;
+overflow: hidden; /* Hide text overflow */
+white-space: nowrap; /* Prevent text from breaking into new lines */
+width: 0; /* Start with no width */
+animation: typing 3s steps(40, end) forwards, blink 0.8s infinite;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+
+.writing{
+    font-family:'Nunito', sans-serif;
+    color: #C4D0E3;
+    letter-spacing: 0.05rem;
+    line-height: 1.5rem;
+    margin: 1rem;
+
+}
+
+.btn1{
+    color: #081F2D;
+    border: 1px solid black;
+    padding: 0.3rem;
+    width: 7rem;
+    height: 4rem;
+    /* margin-top: 2rem; */
+    text-decoration: none;
+    background-color: #3DFFF3;
+    /* height: auto; */
+}
+.btn1:hover{
+    color: #FFFFFF;
+    background-color: #FF2E63;
+}
+.experience{
+  color:#A445F7;
+  font-family: 'Space Grotesk', sans-serif;
+  margin-top: 4rem;
+  letter-spacing: 0.07rem;
+  font-size: 1.3rem;
+}
+i {
+    font-size: 24px;
+    color: #3DFFF3; /* Neon Cyan */
+    /* margin-right: 10px; */
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+    max-width: 1000px;
+    margin: auto;
+}
+.img img{
+    width: 30rem;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+/* Common Section Styling */
+#education, #certifications {
+    padding: 60px 20px;
+    background: #0A192F; /* Dark Techy Background */
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 28px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 0.3rem;
+    color: #3DFFF3; /* Neon Accent */
+}
+
+/* Container for Boxes */
+.edu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Individual Education Boxes */
+.edu-box {
+    background: rgba(255, 255, 255, 0.1); /* Semi-Transparent Box */
+    padding: 15px 20px;
+    border-left: 4px solid #3DFFF3; /* Neon Left Border */
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+/* Heading for Each Box */
+.edu-box h3 {
+    font-size: 20px;
+    margin: 0;
+    color: #E0E0E0;
+}
+
+/* Paragraph Styling */
+.edu-box p {
+    font-size: 16px;
+    color: #A0A0A0;
+    margin: 5px 0;
+}
+
+#projects{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+.project-heading{
+    margin: 3rem;
+    color:#3DFFF3;
+    letter-spacing: 0.5rem;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.img2{
+    width: 50rem;
+    border-radius: 20px;
+    /* border: 7px solid #64FFDA; */
+    box-shadow: 15px 0 30px rgba(0, 255, 255, 0.6);
+    opacity: 0;  /* Initially hidden */
+    transform: translateX(50px);  /* Move slightly to the right */
+    animation: fadeIn 1s ease-in-out 1s forwards; /* Delay + Animation */
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.project-info{
+    width: 45rem;
+    margin: 2rem;
+    text-align: center;
+letter-spacing: 0.1rem;
+font-family:'Nunito', sans-serif;
+color: #A0A0A0;
+font-weight: bold;
+}
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 50px;
+    background: #0A192F; /* Dark Techy Background */
+}
+.contact-para{
+    color: #E0E0E0;
+    font-family: 'Nunito' sans-serif;
+    
+}
+/* Contact Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    margin: 10px 0;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid rgba(0, 255, 255, 0.4);
+    background: #222; /* Dark input background */
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button */
+.btn {
+    background: linear-gradient(45deg, #00ffff, #0077ff);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #0077ff, #00ffff);
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #00ffff;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #0077ff;
+}
+
+
