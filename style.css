@@ -52,7 +52,7 @@ body {
     display: flex;
     align-items: center;
     margin: 6rem; /* Adjust this according to navbar height */
-    padding-top: 6rem; /* Extra space to prevent content from hiding */
+    padding-top: 0rem; /* Extra space to prevent content from hiding */
 }
 
 .content {
@@ -257,7 +257,7 @@ body {
         flex-direction: column;
         align-items: center;
         padding: 1rem;
-        
+    position: static;
     }
     
     .navbar {
